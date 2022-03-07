@@ -1,0 +1,165 @@
+@font-face {
+	font-family: Freight Text Medium;
+	src:url(FreightTextMedium.otf);
+}
+
+
+body {
+    margin: 20px;
+    background: url(img/bkgd2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*--LOGO--------*/
+#logo{
+    /*position: fixed;*/
+    width: 100%;
+    height: 25%;
+    border: #220706;
+    opacity: 85%;
+    
+}
+/*----------------------------------*/
+/*instruction section*/
+
+#instru{
+    padding: 1rem 0.5rem;
+    color: white;
+  text-shadow: 1px 1px 3px black, 0 0 25px  rgb(85, 5, 5), 0 0 5px #220706;
+}
+/*----------------------------------*/
+/*CharacterImg section*/
+
+#imgSec{
+ 
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 10rem 10rem;
+    grid-gap: 1rem;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem 0;
+
+}
+
+.characterImg{
+    height: 10rem;
+    width: 11rem;
+    align-self: center;
+    cursor: pointer;
+
+}
+/*-----------------------------------*/
+
+/*general */
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1280px;
+    background-color: rgba(255, 255, 255, 0.281);
+    margin: 10px auto;
+
+}
+
+#display {
+    display: flex;
+    margin: 10px auto 20px;
+    max-width: 250px;
+    opacity: 0.5;
+}
+
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#middle {
+    margin: 0 auto;
+}
+
+#userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+#userInfo div {
+    margin-bottom: 5px;
+    padding: 8px;
+}
+input[type=text]{
+    height:60px;
+    width: 400px;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+::placeholder{
+    color: #ad6a68;
+}
+input[type=date]{
+    height:60px;
+    width: 400px;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #ad6a68;
+    cursor: text;
+}
+
+#userSubmit {
+    padding: 10px 24px;
+    background-color: rgb(85, 5, 5);
+    font-size: 20px;
+    color: #fff;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    border: 4px solid #220706;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+/*zodiac buttons*/
+.zButton {
+    margin: 5px 7px;
+    height: 80px;
+    width: 85px;
+    border: 4px solid #220706;
+    background-color: rgb(85, 5, 5);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+/*---------------------*/
+/*Adding animations*/
+.brightness {
+    background-color: rgba(0, 0, 0, 0.164);
+    display: inline-block;
+
+}
+.brightness img:hover {
+    opacity: .3;
+    border:5px solid #220706;
+
+}
+.grow{
+    transition: all .2s ease-in-out;
+}
+.grow:hover{
+    transform: scale(1.1);
+}
+.glow{
+    transition: all .2s ease-in-out;
+}
+.glow:hover{
+    box-shadow: 1px 1px 3px black, 0 0 25px  rgb(85, 5, 5), 0 0 5px #220706;
+}
+/*-----------------------------------*/
