@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOU Zodiac</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="screen.css" />
 </head>
 <body>
+  <div id="LOGOSec"><img id="logo" src="img/logo.jpg" alt="YOU LOGO" ></div> 
+  <div id="wrapper">
+    <h2 id="instru" >Welcome! Glad you could make it! We are so excited you joined us! Dare to find out who your Zodiac Character is? If you accept our challenge, select your birthday from the menu below. Else, you can either click on the characters to learn about the characters.</h2>
+    <div id="userInfo">
+      <div id="userName"><input id="name" type="text" placeholder="Your Name"></div>
+      <div id="userDOB"><input id="bday" type="date"></div>
+      <div><button id="userSubmit">I Accept The Challenge!</button></div>
+    </div>
+
+    <!--
+    <div id="monthBtn">
+      <button id="Ari" type="button"> Aquarius </button>
+      <button id="Pis" type="button"> Pisces </button>
+      <button type="button"> Mar. 21 - Apr. 19 </button>
+      <button type="button"> Apr. 20 - May 20 </button>
+      <button type="button"> May 21 - June 21 </button>
+      <button type="button"> June 22 - July 22 </button>
+      <button type="button"> July 23 - Aug. 22 </button>
+      <button type="button"> Aug. 23 - Sept. 22 </button>
+      <button type="button"> Sept. 23 - Oct. 23 </button>
+      <button type="button"> Oct. 24 - Nov. 21 </button>
+      <button type="button"> Nov. 22 - Dec. 21 </button>
+      <button type="button"> Dec. 22 - Jan. 19 </button>
+    </div>-->
+
+
+    <div class="brightness"id="imgSec">
+      <img id="Ari" class="characterImg soundtrack grow" data-sound="candace" src="img/candace_stone.png" alt="candace_stone" width="" height="">
+      <img id="Tau" class="characterImg soundtrack grow" data-sound="marienne" src="img/marienne_bellamy.png" alt="marienne_bellamy" width="" height="">
+      <img id="Gem" class="characterImg soundtrack grow" data-sound="love" src="img/love_quinn.png" alt="love_quinn" width="" height="">
+      <img id="Can" class="characterImg soundtrack grow" data-sound="forty" src="img/forty_quinn.png" alt="forty_quinn" width="" height="">
+      <img id="Leo" class="characterImg soundtrack grow" data-sound="sherry" src="img/sherry_conrad.png" alt="sherry_conrad" width="" height="">
+      <img id="Vir" class="characterImg soundtrack grow" data-sound="peach" src="img/peach_salinger.png" alt="peach_salinger" width="" height="">
+      <img id="Lib" class="characterImg soundtrack grow" data-sound="ethan" src="img/ethan_russell.png" alt="ethan_russell" width="" height="">
+      <img id="Sco" class="characterImg soundtrack grow" data-sound="delilah" src="img/delilah_alves.png" alt="delilah_alves" width="" height="">
+      <img id="Sag" class="characterImg soundtrack grow" data-sound="beck" src="img/guinevere_beck.png" alt="guinevere_beck" width="" height="">
+      <img id="Cap" class="characterImg soundtrack grow" data-sound="joe" src="img/joe_goldberg.png" alt="joe_goldberg" width="" height="">
+      <img id="Aqu" class="characterImg soundtrack grow" data-sound="blythe" src="img/blythe.png" alt="blythe" width="" height="" >
+      <img id="Pis" class="characterImg soundtrack grow" data-sound="cary" src="img/cary_conrad.png" alt="cary_conrad" width="" height="">
+    </div>
     
+    
+
+    <div id="middle">
+      <button class="zButton" id="Ari2">Aries</button>
+      <button class="zButton" id="Tau2">Taurus</button>
+      <button class="zButton" id="Gem2">Gemini</button>
+      <button class="zButton" id="Can2">Cancer</button>
+      <button class="zButton" id="Leo2">Leo</button>
+      <button class="zButton" id="Vir2">Virgo</button>
+      <button class="zButton" id="Lib2">Libra</button>
+      <button class="zButton" id="Sco2">Scorpio</button>
+      <button class="zButton" id="Sag2">Sagittarius</button>
+      <button class="zButton" id="Cap2">Capricorn</button>
+      <button class="zButton" id="Aqu2">Aquarius</button>
+      <button class="zButton" id="Pis2">Pisces</button>
+
+    <div id="modal" class="modal" hidden>
+      <div class="modal-body">
+        <div class="modal-content">
+          <div><p><span id="zCharacter">You are this Character!</span> <span id="zDate"></span></p></div>
+          <img id="zImage" src="img/blank.png" alt="blank"/>
+          <p id="zDescription">This is a description.</p>
+          <button id="btn-modal-close" class="toggle-modal">Close</button>
+        </div>
+      </div>
+      <div class="blanket"></div>
+    </div>
+  </div>
+  <audio id="speakers"></audio>
+  <script src="main.js"></script>
 </body>
 </html>
